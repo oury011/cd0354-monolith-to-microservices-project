@@ -22,7 +22,7 @@ jobs:
     - run: docker tag udagram-api-feed amadou011/udagram-api-feed:v1
     - run: docker tag udagram-api-user amadou011/udagram-api-user:v1
     - run: docker tag udagram-frontend:local amadou011/udagram-frontend:v1
-    - run: echo "${{ secrets.DOCKER_PASSWORD}}" | docker login -u "${{secrets.DOCKER_USERNAME}}"
+    - run: echo "${{ secrets.DOCKER_PASSWORD}}". | docker login "${{secrets.DOCKER_USERNAME}}" --password-stdin
     - run: docker push amadou011/reverseproxy:v1
     - run: docker push amadou011/udagram-api-feed:v1
     - run: docker push amadou011/udagram-api-user:v1
