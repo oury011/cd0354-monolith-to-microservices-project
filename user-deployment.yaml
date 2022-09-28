@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: user
+  name: backend-user
   labels:
-    app: user
+    app: backend-user
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: user
+      app: backend-user
   template:
     metadata:
       labels:
-        app: user
+        app: backend-user
     spec:
       containers:
-      - name: user
+      - name: backend-user
         image: oury011/udagram-api-user:v1
         ports:
         - containerPort: 8080
@@ -24,3 +24,4 @@ spec:
                 name: env-config-map
             - secretRef:
                 name: env-pg-secret
+          

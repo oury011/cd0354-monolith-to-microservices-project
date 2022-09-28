@@ -4,7 +4,7 @@ metadata:
   name: backend-feed
 spec:
   selector:
-    name: feed
+    name: backend-feed
   ports:
     - protocol: TCP
       port: 8080
