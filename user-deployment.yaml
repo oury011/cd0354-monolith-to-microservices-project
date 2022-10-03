@@ -15,11 +15,11 @@ spec:
         app: backend-user
     spec:
       containers:
-      - name: backend-user
-        image: oury011/udagram-api-user:v1
-        ports:
-        - containerPort: 8080
-        envFrom:
+        - name: backend-user
+          image: oury011/udagram-api-user:v1
+          ports:
+            - containerPort: 8080
+          envFrom:
             - configMapRef:
                 name: env-config-map
             - secretRef:

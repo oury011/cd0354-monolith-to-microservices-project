@@ -3,9 +3,8 @@ kind: ConfigMap
 metadata:
   name: env-config-map
 data:
-  POSTGRES_HOST: mydb-01.cyefp3lglsw3.us-east-1.rds.amazonaws.com
+  POSTGRES_HOST: database-1.ctor9wzjbkej.us-east-1.rds.amazonaws.com
   POSTGRES_DB: postgres
-  AWS_REGION: us-east-1
   AWS_BUCKET: mybucket-uda-imgstore
   AWS_REGION: us-east-1
   JWT_SECRET: testing
