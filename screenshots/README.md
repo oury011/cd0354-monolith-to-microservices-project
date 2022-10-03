@@ -21,5 +21,5 @@ kubectl describe hpa
 ```
 * To verify that you have set up logging with a backend application
 ```bash
-kubectl logs {pod_name}
+kubectl logs  kubectl logs reverseproxy-59dc8d6b88-k798l
 ```

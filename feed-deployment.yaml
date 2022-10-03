@@ -19,6 +19,9 @@ spec:
           image: oury011/udagram-api-feed:v1
           ports:
             - containerPort: 8080
+          resources:
+            requests:
+              cpu: "105m"
           envFrom:
             - configMapRef:
                 name: env-config-map
